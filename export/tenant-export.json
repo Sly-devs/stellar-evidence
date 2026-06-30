@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-06-30T17:51:09.774Z",
+    "generated_at": "2026-06-30T18:12:02.297Z",
     "source": "Sly platform — Stellar Demo (Epic 102 Phase A) tenant",
-    "purpose": "Verifiable export for Stellar SDF grant review. Every on-chain reference (tx hash, G-address, contract id) is independently verifiable via stellar.expert or Horizon without any Sly call.",
+    "purpose": "Verifiable export for Stellar SDF grant review. Every on-chain reference is independently verifiable via stellar.expert or Horizon without any Sly call.",
     "environment": "sandbox / stellar:testnet only — zero production or mainnet data",
     "pii_scrubbed": true
   },
@@ -73,9 +73,9 @@
       ],
       "custody_provider": "env_key",
       "limits": {
-        "per_transaction_usd": 1000,
-        "daily_usd": 5000,
-        "monthly_usd": 20000
+        "per_transaction_usd": 1,
+        "daily_usd": 10,
+        "monthly_usd": 100
       },
       "parent_account_id": "fe02442f-6757-b847-f694-8a2247d8fcbe",
       "created_at": "2026-06-10T18:22:53.441871+00:00"
