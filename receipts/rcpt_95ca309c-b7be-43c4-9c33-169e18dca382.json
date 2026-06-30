@@ -1,0 +1,43 @@
+{
+  "asset": "USDC",
+  "chain": "stellar:testnet",
+  "amount": "0.0100000",
+  "intent": {
+    "model": "demo",
+    "reason": "post-sep10"
+  },
+  "tx_hash": null,
+  "agent_id": "3f85288f-aefd-a6b9-5acb-b8512d512765",
+  "resource": {
+    "url": "http://localhost:3001/my-service",
+    "host": "localhost:3001",
+    "path": "/my-service"
+  },
+  "signature": "c46c832669ff66e9a127fd88901646d43d3858248dbecb19873a198923032e0c",
+  "signed_by": "sly",
+  "agent_name": "stellar-demo-buyer",
+  "receipt_id": "rcpt_95ca309c-b7be-43c4-9c33-169e18dca382",
+  "settled_at": "2026-06-11T00:34:33.416Z",
+  "to_address": "GAUJGJMPNM5FL5FA2DTRZSYUXCK4VXLYOZL2RYZH24EFDHKRABIPVBA4",
+  "from_address": "GBJWOSLOYOZ2TGWLBMDXTJOAC3UP5A4P7AJM4VLWWS5VRTNMJ3JVSUYJ",
+  "requested_at": "2026-06-11T00:34:24.165Z",
+  "signature_alg": "HMAC-SHA256",
+  "agent_kya_tier": 2,
+  "rail_selection": {
+    "chosen": "stellar:testnet",
+    "reasons": [
+      "picked:fee_sponsored",
+      "picked:cheaper_fee",
+      "picked:faster_finality"
+    ],
+    "rejected": []
+  },
+  "signature_mode": "witness-hmac",
+  "policy_decision": {
+    "decision": "approve",
+    "action_type": "x402.pay.stellar",
+    "evaluated_at": "2026-06-11T00:34:24.165Z"
+  },
+  "agent_chain_proof": "sep10",
+  "canonical_encoding": "json-sort-keys-v1"
+}
