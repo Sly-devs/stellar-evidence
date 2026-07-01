@@ -4,6 +4,10 @@
 
 Everything you need to independently verify Sly's shipped Stellar work is here in this repo. No data-room access, no contact request, no Sly login required.
 
+## 2-minute narrated tour of the demo tenant
+
+Prefer to watch first? [`demo/stellar-sdf-tour-narrated.mp4`](./demo/stellar-sdf-tour-narrated.mp4) is a 2:24 walkthrough of exactly what the demo tenant at `app.getsly.ai` looks like when you log in — every claim in the video pairs with a chain-side or offline verifier check documented below. See [`demo/README.md`](./demo/) for the beat-by-beat map from video timestamps to the evidence files.
+
 ## 30-second verification
 
 ```bash
@@ -34,6 +38,10 @@ open https://stellar.expert/explorer/testnet/tx/378e8aa99eb136c50e9ee5d7ebaca3d4
 | [`DEMO_ADDENDUM.md`](./DEMO_ADDENDUM.md) | Per-beat specification of dashboard views paired with their matching Stellar Explorer URLs — converts the dashboard from a presentation surface into a verification surface. |
 | [`receipts/`](./receipts/) | The three signed witness receipts cited in the evidence pack. Each verifies offline with the standalone verifier + the demo tenant's witness key. |
 | [`verify-offline.mjs`](./verify-offline.mjs) | Standalone HMAC verifier — 57 lines, only Node built-ins, no dependencies. Re-derives the signature against the canonical encoding and byte-compares. |
+| [`demo/stellar-sdf-tour-narrated.mp4`](./demo/stellar-sdf-tour-narrated.mp4) | 2:24 narrated tour of the live demo tenant on Stellar testnet. What the reviewer sees at `app.getsly.ai` before logging in themselves. |
+| [`export/tenant-export.json`](./export/tenant-export.json) | Machine-readable export of the full demo tenant — every G-address, tx hash, and receipt with stellar.expert URLs. |
+| [`export/transfers.csv`](./export/transfers.csv) | Spreadsheet-friendly slice of the transfers with paired Stellar Explorer URLs. |
+| [`EXPORT.md`](./EXPORT.md) | Human-readable summary of the export with a worked cross-reference example. |
 
 ## What the headline settlement proves
 
