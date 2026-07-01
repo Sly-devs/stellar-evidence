@@ -6,9 +6,9 @@ Everything you need to independently verify Sly's shipped Stellar work is here i
 
 ## 2-minute narrated tour of the demo tenant
 
-[![Stellar SDF tour — click to play](./demo/poster.jpg)](./demo/stellar-sdf-tour-narrated.mp4)
+[![Watch the tour on YouTube — click to play](./demo/poster.jpg)](https://youtu.be/6IUQur-ymuw)
 
-**[▶ Play the 2:24 tour →](./demo/stellar-sdf-tour-narrated.mp4)** &nbsp;·&nbsp; [beat-by-beat map](./demo/) &nbsp;·&nbsp; [narration script](./demo/narration.md)
+**[▶ Watch on YouTube (2:24) →](https://youtu.be/6IUQur-ymuw)** &nbsp;·&nbsp; [beat-by-beat map](./demo/) &nbsp;·&nbsp; [narration script](./demo/narration.md) &nbsp;·&nbsp; [mp4 mirror](./demo/stellar-sdf-tour-narrated.mp4)
 
 A walkthrough of exactly what the demo tenant at `app.getsly.ai` looks like when you log in — every claim in the video pairs with a chain-side or offline-verifier check documented below.
 

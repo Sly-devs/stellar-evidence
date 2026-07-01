@@ -4,15 +4,18 @@
 
 ## Watch
 
-[![Stellar SDF tour — click to play](./poster.jpg)](./stellar-sdf-tour-narrated.mp4)
+[![Watch the tour on YouTube — click to play](./poster.jpg)](https://youtu.be/6IUQur-ymuw)
 
-**[▶ Play in browser →](./stellar-sdf-tour-narrated.mp4)** &nbsp;·&nbsp; opens GitHub's native mp4 player
+**[▶ Watch on YouTube (2:24) →](https://youtu.be/6IUQur-ymuw)** &nbsp;·&nbsp; instant streaming, no download
 
-Or clone and open locally:
-```bash
-git clone https://github.com/Sly-devs/stellar-evidence.git
-open stellar-evidence/demo/stellar-sdf-tour-narrated.mp4
-```
+### Alternate playback modes
+
+- **Direct mp4 mirror in this repo:** [`stellar-sdf-tour-narrated.mp4`](./stellar-sdf-tour-narrated.mp4) (13 MB, MIT-licensed with the rest of the pack — kept as an offline / self-hosted mirror for anyone who wants the source file)
+- **Clone and open locally:**
+  ```bash
+  git clone https://github.com/Sly-devs/stellar-evidence.git
+  open stellar-evidence/demo/stellar-sdf-tour-narrated.mp4
+  ```
 
 ## The six beats
 
