@@ -6,7 +6,7 @@ Everything you need to independently verify Sly's shipped Stellar work is here i
 
 ## 2-minute narrated tour of the demo tenant
 
-[![Watch the tour on YouTube — click to play](./demo/poster.jpg)](https://youtu.be/6IUQur-ymuw)
+[![Watch the tour on YouTube — click to play](./demo/preview.gif)](https://youtu.be/6IUQur-ymuw)
 
 **[▶ Watch on YouTube (2:24) →](https://youtu.be/6IUQur-ymuw)** &nbsp;·&nbsp; [beat-by-beat map](./demo/) &nbsp;·&nbsp; [narration script](./demo/narration.md) &nbsp;·&nbsp; [mp4 mirror](./demo/stellar-sdf-tour-narrated.mp4)
 
@@ -70,7 +70,7 @@ Tampering with **any** highlighted field — agent name, KYA tier, proof method,
 
 ## How to reach the team
 
-Email **hello@getsly.ai** with subject "Stellar SDF review — `<your topic>`". Include this repo's URL if you'd like us to update the evidence pack with additional artifacts.
+Email **admin@getsly.ai** with subject "Stellar SDF review — `<your topic>`". Include this repo's URL if you'd like us to update the evidence pack with additional artifacts.
 
 ---
 

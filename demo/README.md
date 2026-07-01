@@ -4,7 +4,7 @@
 
 ## Watch
 
-[![Watch the tour on YouTube — click to play](./poster.jpg)](https://youtu.be/6IUQur-ymuw)
+[![Watch the tour on YouTube — click to play](./preview.gif)](https://youtu.be/6IUQur-ymuw)
 
 **[▶ Watch on YouTube (2:24) →](https://youtu.be/6IUQur-ymuw)** &nbsp;·&nbsp; instant streaming, no download
 
