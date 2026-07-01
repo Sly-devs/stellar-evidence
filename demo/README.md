@@ -4,7 +4,9 @@
 
 ## Watch
 
-Directly in the browser: [`stellar-sdf-tour-narrated.mp4`](./stellar-sdf-tour-narrated.mp4)
+[![Stellar SDF tour — click to play](./poster.jpg)](./stellar-sdf-tour-narrated.mp4)
+
+**[▶ Play in browser →](./stellar-sdf-tour-narrated.mp4)** &nbsp;·&nbsp; opens GitHub's native mp4 player
 
 Or clone and open locally:
 ```bash
