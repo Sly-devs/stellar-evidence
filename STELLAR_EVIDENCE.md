@@ -338,7 +338,9 @@ Two facets of the agentic identity stack have shipping code paths but are not ye
 | AttestProtocol receipt-hash anchoring on Soroban | Code complete in `apps/api/src/services/anchor/attest-stellar.ts` (in Sly's main monorepo) — route returns a signed attestation XDR + `status: "pending_init"` | An open upstream contract-initialization question with the AttestProtocol team. The hash, schema UID, and signed XDR are all computed correctly today; the on-chain settle is waiting on resolution. |
 | OZ Soroban smart-account custody (`agent_custody_provider: "oz_soroban"`) | Receipt-side abstraction shipped (§1 already stamps the field — currently `env_key`); on-chain custody contract not yet deployed | Rust toolchain + Soroban CLI on a build machine + final review of the OpenZeppelin Soroban smart-account contract surface |
 
-When either ships, additional receipts and on-chain artifacts will land in this evidence pack.
+**Interim anchoring that IS live today:** receipt-hash anchoring to EAS (Ethereum Attestation Service) on Base Sepolia ships now — it is the anchor route's default backend (`eas-base`, reusing Sly's trade-attestation schema as the Phase A baseline; the same route also accepts `attest-stellar` and `dual`). A witness receipt's hash can therefore be anchored on-chain today; what the first row above tracks is specifically the *Soroban-native* anchor. When the AttestProtocol path unblocks (or we self-host the contract), the same route returns the live Soroban attestation without changes at the route surface.
+
+When either pending facet ships, additional receipts and on-chain artifacts will land in this evidence pack.
 
 ---
 
@@ -371,6 +373,7 @@ Every claim in this document was verified at the timestamps below before being w
 | DB transfer ↔ Horizon hash correlation | 2026-06-30 | Timestamp join (max 5s diff) between `transfers.protocol_metadata.witness_receipt.settled_at` and Horizon `created_at` | 13/14 DB transfers matched within 2 seconds; 1 DB transfer had no Horizon match within 5s (not in §2 table) |
 | DB tx_hash columns | 2026-06-30 | Direct REST query against the live Supabase database | 0/14 transfers had a populated `tx_hash` in any column — disclosed honestly. The settlements are real (Horizon proves it); we just didn't capture the hash at write time because the demo seller's response body didn't echo it. |
 | Demo seller's response shape | 2026-06-30 | Code read of `examples/stellar-demo/seller.mjs` and `apps/api/src/routes/x402-stellar.ts:391` | Confirmed: `tx_hash` is populated from `responseBody.tx`; the demo seller doesn't echo it. Real settle happens via x402.org facilitator regardless. |
+| EAS receipt-anchor interim is live (§8 note) | 2026-07-01 | Code read of the anchor route in `apps/api/src/routes/x402-stellar.ts` | Confirmed: the route defaults to backend `eas-base` (receipt-hash anchoring on Base Sepolia, trade-attestation schema reused); `attest-stellar` and `dual` backends accepted, Soroban leg still `pending_init`. |
 
 ---
 
